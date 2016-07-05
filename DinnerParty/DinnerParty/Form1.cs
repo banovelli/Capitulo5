@@ -17,9 +17,9 @@ namespace DinnerParty
         public Form1()
         {
             InitializeComponent();
-            dinnerParty = new DinnerParty() { NumberofPeople = 5 };
-            dinnerParty.CalculateCostOfDecorations(fancyBox.Checked);
-            dinnerParty.setHeathyOption(healthyBox.Checked);
+            dinnerParty = new DinnerParty(5, healthyBox.Checked ,fancyBox.Checked);
+            //dinnerParty.CalculateCostOfDecorations(fancyBox.Checked);
+          //  dinnerParty.setHeathyOption(healthyBox.Checked);
             DisplayDinnerPartyCost();
         }
         
@@ -37,7 +37,8 @@ namespace DinnerParty
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            dinnerParty.NumberofPeople = (int)numericUpDown1.Value;
+            dinnerParty.NumberOfPeople = (int)numericUpDown1.Value;
+            dinnerParty.CalculateCostOfDecorations(fancyBox.Checked);
             DisplayDinnerPartyCost();
         }
 

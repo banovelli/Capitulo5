@@ -99,13 +99,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(144, 109);
+            this.ClientSize = new System.Drawing.Size(170, 131);
             this.Controls.Add(this.costLbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.healthyBox);
             this.Controls.Add(this.fancyBox);
             this.Controls.Add(this.numericUpDown1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Planejador de Festas";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
